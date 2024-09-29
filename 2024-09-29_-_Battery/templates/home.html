@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Percentage</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Battery Percentage</h1>
+            <button class="btn" onclick="location.reload()">Refresh</button>
+        </div>
+        
+        <p class="percent"><span>{{ percent }}%</span> - {{ plugged }}</p>
+        <div class="progress">
+            <div class="progress_in" style="width: {{ percent }}%;"></div>
+        </div>
+
+        <p class="date">Last Refresh: {{ date }}</p>
+    </div>
+    
+</body>
+</html>
